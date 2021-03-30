@@ -1,0 +1,9 @@
+# Chapter 1
+
+The first chapter was not a page turner but it was thought provoking at times.
+
+They speak about constructing a domain specific language to help attack a problem and break it down into the individual components.  This is very much the concept of domain drive design.  The quote `If our software components were simpler or more general they would have simpler specifications` resonated with me on multiple fronts.  Always a huge fan of simpler is better for multiple reasons.  It is easier to reason about and debug and more often than not it is more resilient to failures.
+
+Where they lost me a bit was in their **additive programming** section.  While yes in a perfect world adding a new feature should be just adding code and that is it but rarely is that the case.  It is not so much that you did not understand the problem or have well defined requirements at the beginning, I would argue this is a pipe dream anyways most of the time, but new features sometimes are also improving existing logic so you must change and evolve the setup instead of just adding.  This is the same problem with schema evolution.  Yes, in a perfect world you just add to a schema all day long but eventually you add something that makes another part obsolete and you have a decision.  Either keep supporting the old obsolete fields for all time or evolve the schema and drop the obsolete portions of the schema.  This is not an easy problem and platforms like kafka have tried to make it easier with their schema registries or frameworks like graphql all trying to **solve** the evolution problem.  This problem applies to code paths and logic, it is usually just called tech debt though.
+
+These are just some thoughts I jotted down while reading the first chapter.  While it was not a page turner the book does seem interesting in how they laid out what they **WILL** talk about so excited to get there.
