@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>Software Design For Flexibility</title>
+        <title>Chapter 1 - Software Design For Flexibility</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.33e2939f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -51,7 +51,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-design-for-flexibility" class="md-skip">
+        <a href="#chapter-1" class="md-skip">
           Skip to content
         </a>
       
@@ -70,7 +70,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Software Design For Flexibility" class="md-header__button md-logo" aria-label="Software Design For Flexibility" data-md-component="logo">
+    <a href=".." title="Software Design For Flexibility" class="md-header__button md-logo" aria-label="Software Design For Flexibility" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Software Design For Flexibility
+              Chapter 1
             
           </span>
         </div>
@@ -150,7 +150,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Software Design For Flexibility" class="md-nav__button md-logo" aria-label="Software Design For Flexibility" data-md-component="logo">
+    <a href=".." title="Software Design For Flexibility" class="md-nav__button md-logo" aria-label="Software Design For Flexibility" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -160,6 +160,21 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Software Design For Flexibility
+      </a>
+    </li>
+  
+
     
       
       
@@ -177,25 +192,10 @@
         
       
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Software Design For Flexibility
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapter1/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         Chapter 1
       </a>
+      
     </li>
   
 
@@ -229,8 +229,11 @@
               
                 
                 
-                <h1 id="software-design-for-flexibility">Software Design For Flexibility</h1>
-<p>Going to be going through the book <a href="https://mitpress.mit.edu/books/software-design-flexibility">Sofware Design For Flexibility</a> and going to document my progress here.</p>
+                <h1 id="chapter-1">Chapter 1</h1>
+<p>The first chapter was not a page turner but it was thought provoking at times.</p>
+<p>They speak about constructing a domain specific language to help attack a problem and break it down into the individual components.  This is very much the concept of domain drive design.  The quote <code>If our software components were simpler or more general they would have simpler specifications</code> resonated with me on multiple fronts.  Always a huge fan of simpler is better for multiple reasons.  It is easier to reason about and debug and more often than not it is more resilient to failures.</p>
+<p>Where they lost me a bit was in their <strong>additive programming</strong> section.  While yes in a perfect world adding a new feature should be just adding code and that is it but rarely is that the case.  It is not so much that you did not understand the problem or have well defined requirements at the beginning, I would argue this is a pipe dream anyways most of the time, but new features sometimes are also improving existing logic so you must change and evolve the setup instead of just adding.  This is the same problem with schema evolution.  Yes, in a perfect world you just add to a schema all day long but eventually you add something that makes another part obsolete and you have a decision.  Either keep supporting the old obsolete fields for all time or evolve the schema and drop the obsolete portions of the schema.  This is not an easy problem and platforms like kafka have tried to make it easier with their schema registries or frameworks like graphql all trying to <strong>solve</strong> the evolution problem.  This problem applies to code paths and logic, it is usually just called tech debt though.</p>
+<p>These are just some thoughts I jotted down while reading the first chapter.  While it was not a page turner the book does seem interesting in how they laid out what they <strong>WILL</strong> talk about so excited to get there.</p>
                 
               
               
@@ -249,20 +252,20 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-      
-        <a href="chapter1/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              Chapter 1
+              Software Design For Flexibility
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
@@ -285,10 +288,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d892486b.min.js"></script>
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
       
     
   </body>
